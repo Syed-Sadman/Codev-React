@@ -1,18 +1,15 @@
-//import logo from './logo.svg';
-import React, { Component } from 'react';
-//import ReactDOM from 'react-dom';
-import './index.js'
+//import Greet from './comp/Gree';
+//import Msg from './comp/Message'
+import Count from './comp/Count'
 
+function App(){
+  return(
+    <div>
 
-class App extends Component {
-  render() {
-    return(
-    <div className="App">
-      <Greet name="Viswas"/>
+      <Count/>
+     
     </div>
-    );
-    }  
+  );
 }
-
 
 export default App;
