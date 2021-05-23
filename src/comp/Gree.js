@@ -2,12 +2,13 @@ import React from 'react';
 
 
 
-const Greet=props=>{
-    console.log(props);
+const Greet=(props)=>{
+
+  const {name,heroName}=props;
     return(
       <div>
-        <button>action</button>
-        <h1>Hello {props.name}</h1>
+
+        <h1>Hello {name} and {heroName}</h1>
       
       </div>
       
