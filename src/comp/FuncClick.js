@@ -1,9 +1,13 @@
 import React from 'react'
 
 function FuncClick() {
+    function clickHandler(){
+        console.log('Functional button clicked');
+
+    }
     return (
         <div>
-            <button>Click</button>
+            <button onClick={clickHandler}>Click</button>
         </div>
     )
 }
