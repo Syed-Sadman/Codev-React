@@ -13,7 +13,8 @@ class LifeCycleB extends React.Component {
         console.log('lifecycle B getDerivedStateFromProps')
         return null;
     }
-
+    
+    
     componentDidMount(){
         console.log('lifecycle B componentDidMount')
     }

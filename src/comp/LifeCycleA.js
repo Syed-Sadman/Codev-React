@@ -18,12 +18,18 @@ class LifeCycleA extends React.Component {
         console.log('lifecycle A componentDidMount')
     }
     
+    clickHand=()=>{
+        this.setState({
+            name:'Sabbir'
+        })
+    }
+
     render() {
+    
         console.log('render A')
         return (
             <div>
-                lifecycleA
-                <LifeCycleB/> 
+                <LifeCycleB/>
             </div>
         )
     }
