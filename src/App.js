@@ -5,7 +5,8 @@
 // import ClsClick from './comp/ClsClick'
 // import FuncClick from './comp/FuncClick'
 //import ParentComponent from './comp/ParentComponent'
-import LifeCycleA from './comp/LifeCycleA'
+//import LifeCycleA from './comp/LifeCycleA'
+import Table from './comp/Table'
 //import UserGreeting from './comp/UserGreeting'
 function App(){
   return(
@@ -15,7 +16,8 @@ function App(){
       <FuncClick/> */}
     {/* <ParentComponent/>
       <UserGreeting/> */}
-    <LifeCycleA/>
+    {/* <LifeCycleA/> */}
+    <Table/>
     </div>
   );
 }
