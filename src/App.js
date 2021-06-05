@@ -6,7 +6,9 @@
 // import FuncClick from './comp/FuncClick'
 //import ParentComponent from './comp/ParentComponent'
 //import LifeCycleA from './comp/LifeCycleA'
-import Table from './comp/Table'
+import ParentComp from './comp/ParentComp'
+//import PureComp from './comp/PureComp'
+// import Table from './comp/Table'
 //import UserGreeting from './comp/UserGreeting'
 function App(){
   return(
@@ -17,7 +19,10 @@ function App(){
     {/* <ParentComponent/>
       <UserGreeting/> */}
     {/* <LifeCycleA/> */}
-    <Table/>
+    {/* <Table/> */}
+
+      {/* <PureComp/> */}
+      <ParentComp/>
     </div>
   );
 }
