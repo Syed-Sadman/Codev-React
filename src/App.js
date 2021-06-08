@@ -6,7 +6,9 @@
 // import FuncClick from './comp/FuncClick'
 //import ParentComponent from './comp/ParentComponent'
 //import LifeCycleA from './comp/LifeCycleA'
-import ParentComp from './comp/ParentComp'
+import ClickCount from './comp/ClickCount';
+import HoverCount from './comp/HoverCount';
+//import ParentComp from './comp/ParentComp'
 //import PureComp from './comp/PureComp'
 // import Table from './comp/Table'
 //import UserGreeting from './comp/UserGreeting'
@@ -20,9 +22,10 @@ function App(){
       <UserGreeting/> */}
     {/* <LifeCycleA/> */}
     {/* <Table/> */}
-
+      <ClickCount/>
       {/* <PureComp/> */}
-      <ParentComp/>
+      {/* <ParentComp/> */}
+      <HoverCount/>
     </div>
   );
 }
