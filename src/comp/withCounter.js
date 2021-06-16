@@ -1,7 +1,7 @@
 import React from 'react';
 
-const UpdatedComponent=(OriginalComponent)=>{
-    class newComponent extends React.Component{
+const withCounter=(WrappedComponent)=>{
+    class WithCounter extends React.Component{
         constructor(props) {
             super(props)
         
@@ -19,12 +19,12 @@ const UpdatedComponent=(OriginalComponent)=>{
         
         render(){
             const {count}=this.state;
-            return <OriginalComponent name='Sadman' count={count} increment={this.clickcount} />
+            return <WrappedComponent name='Sadman' count={count} increment={this.clickcount} />
         }
         
     }
-    return newComponent;
+    return WithCounter;
 }
 
 
-export default UpdatedComponent;
+export default withCounter;
