@@ -12,10 +12,11 @@
 //import PureComp from './comp/PureComp'
 // import Table from './comp/Table'
 
-import ClickCountTwo from "./comp/ClickCountTwo";
-import CountTwo from "./comp/CountTwo";
-import HoverCountTwo from "./comp/HoverCountTwo";
-
+// import ClickCountTwo from "./comp/ClickCountTwo";
+// import CountTwo from "./comp/CountTwo";
+// import HoverCountTwo from "./comp/HoverCountTwo";
+import ComponentC from "./comp/ComponentC";
+import {UserProvider} from "./comp/userContext"
 //import UserGreeting from './comp/UserGreeting'
 function App(){
   return(
@@ -31,13 +32,15 @@ function App(){
       {/* <PureComp/> */}
       {/* <ParentComp/> */}
       {/* <HoverCount/> */}
-      <CountTwo render={(count,increment)=><ClickCountTwo count={count} increment={increment}></ClickCountTwo>}/>
+      {/* <CountTwo render={(count,increment)=><ClickCountTwo count={count} increment={increment}></ClickCountTwo>}/>
       <CountTwo render={(count,increment)=><HoverCountTwo count={count} increment={increment}></HoverCountTwo> }/>
+ */}
 
+    <UserProvider value="Vishwas">
+      <ComponentC/>
 
-
-
-    </div>
+    </UserProvider>
+       </div>
   );
 }
 
