@@ -12,36 +12,35 @@
 //import PureComp from './comp/PureComp'
 // import Table from './comp/Table'
 
+import ClassCount from "./funcComp/ClassCount";
+
 // import ClickCountTwo from "./comp/ClickCountTwo";
 // import CountTwo from "./comp/CountTwo";
 // import HoverCountTwo from "./comp/HoverCountTwo";
-import ComponentC from "./comp/ComponentC";
-import {UserProvider} from "./comp/userContext"
+// import ComponentC from "./comp/ComponentC";
+// import {UserProvider} from "./comp/userContext"
 //import UserGreeting from './comp/UserGreeting'
 function App(){
   return(
+    //   {/* <ClsClick/>
+    //   <br></br>
+    //   <FuncClick/> */}
+    // /* <ParentComponent/>
+    //   <UserGreeting/> */
+    // {/* <LifeCycleA/> */}
+    // {/* <Table/> */}
+    //   {/* <ClickCount/> */}
+    //   {/* <PureComp/> */}
+    //   {/* <ParentComp/> */}
+    //   {/* <HoverCount/> */}
+    //   {/* <CountTwo render={(count,increment)=><ClickCountTwo count={count} increment={increment}></ClickCountTwo>}/>
+    //   <CountTwo render={(count,increment)=><HoverCountTwo count={count} increment={increment}></HoverCountTwo> }/>
     <div>
-      {/* <ClsClick/>
-      <br></br>
-      <FuncClick/> */}
-    {/* <ParentComponent/>
-      <UserGreeting/> */}
-    {/* <LifeCycleA/> */}
-    {/* <Table/> */}
-      {/* <ClickCount/> */}
-      {/* <PureComp/> */}
-      {/* <ParentComp/> */}
-      {/* <HoverCount/> */}
-      {/* <CountTwo render={(count,increment)=><ClickCountTwo count={count} increment={increment}></ClickCountTwo>}/>
-      <CountTwo render={(count,increment)=><HoverCountTwo count={count} increment={increment}></HoverCountTwo> }/>
- */}
+      <ClassCount/>
+    </div>
+    
+    )
+      
 
-    <UserProvider value="Vishwas">
-      <ComponentC/>
-
-    </UserProvider>
-       </div>
-  );
-}
-
+  }
 export default App;
