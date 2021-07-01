@@ -12,7 +12,8 @@
 //import PureComp from './comp/PureComp'
 // import Table from './comp/Table'
 
-import ClassCount from "./funcComp/ClassCount";
+//import ClassCount from "./funcComp/ClassCount";
+import UseStateHook from "./funcComp/UseStateHook";
 
 // import ClickCountTwo from "./comp/ClickCountTwo";
 // import CountTwo from "./comp/CountTwo";
@@ -36,7 +37,8 @@ function App(){
     //   {/* <CountTwo render={(count,increment)=><ClickCountTwo count={count} increment={increment}></ClickCountTwo>}/>
     //   <CountTwo render={(count,increment)=><HoverCountTwo count={count} increment={increment}></HoverCountTwo> }/>
     <div>
-      <ClassCount/>
+      {/* <ClassCount/> */}
+      <UseStateHook/>
     </div>
     
     )
