@@ -13,7 +13,8 @@
 // import Table from './comp/Table'
 
 //import ClassCount from "./funcComp/ClassCount";
-import UseStateHook from "./funcComp/UseStateHook";
+import HooCountTwo from "./funcComp/HooCountTwo";
+
 
 // import ClickCountTwo from "./comp/ClickCountTwo";
 // import CountTwo from "./comp/CountTwo";
@@ -38,7 +39,9 @@ function App(){
     //   <CountTwo render={(count,increment)=><HoverCountTwo count={count} increment={increment}></HoverCountTwo> }/>
     <div>
       {/* <ClassCount/> */}
-      <UseStateHook/>
+      {/* <UseStateHook/> */}
+   
+      <HooCountTwo/>
     </div>
     
     )
