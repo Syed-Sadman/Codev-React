@@ -13,7 +13,8 @@
 // import Table from './comp/Table'
 
 //import ClassCount from "./funcComp/ClassCount";
-import HooCountTwo from "./funcComp/HooCountTwo";
+//import HooCountTwo from "./funcComp/HooCountTwo";
+import HookCountThree from "./funcComp/HookCountThree";
 
 
 // import ClickCountTwo from "./comp/ClickCountTwo";
@@ -40,8 +41,8 @@ function App(){
     <div>
       {/* <ClassCount/> */}
       {/* <UseStateHook/> */}
-   
-      <HooCountTwo/>
+    <HookCountThree/>
+      {/* <HooCountTwo/> */}
     </div>
     
     )
