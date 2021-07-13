@@ -12,9 +12,11 @@
 //import PureComp from './comp/PureComp'
 // import Table from './comp/Table'
 
+import UseEffect from "./funcComp/UseEffect";
+
 //import ClassCount from "./funcComp/ClassCount";
 //import HooCountTwo from "./funcComp/HooCountTwo";
-import HookCountFour from "./funcComp/HookCountFour";
+//import HookCountFour from "./funcComp/HookCountFour";
 //import HookCountThree from "./funcComp/HookCountThree";
 
 
@@ -42,8 +44,10 @@ function App(){
     <div>
       {/* <ClassCount/> */}
       {/* <UseStateHook/> */}
-    <HookCountFour/>
+    {/* <HookCountFour/> */}
       {/* <HooCountTwo/> */}
+      <UseEffect/>
+
     </div>
     
     )
