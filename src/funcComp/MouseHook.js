@@ -6,14 +6,17 @@ function MouseHook() {
 
 
     const logMousePosition=(e)=>{
-        console.log("function mouse position run")
+        console.log("mouse move run")
         setX(e.clientX);
         setY(e.clientY);
     }
 
     useEffect(()=>{
-        console.log('useEffect run')
+        // console.log('useEffect run')
         window.addEventListener('mousemove',logMousePosition)
+        return ()=>{
+            window.removeEventListener('mousemove',logMousePosition);
+        }
     },[])
 
     return (

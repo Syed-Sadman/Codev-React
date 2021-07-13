@@ -12,7 +12,9 @@
 //import PureComp from './comp/PureComp'
 // import Table from './comp/Table'
 
-import MouseHook from "./funcComp/MouseHook";
+import MouseContainer from "./funcComp/MouseContainer";
+
+//import MouseHook from "./funcComp/MouseHook";
 //import UseEffect from "./funcComp/UseEffect";
 
 //import ClassCount from "./funcComp/ClassCount";
@@ -48,7 +50,8 @@ function App(){
     {/* <HookCountFour/> */}
       {/* <HooCountTwo/> */}
       {/* <UseEffect/> */}
-    <MouseHook/>
+    {/* <MouseHook/> */}
+    <MouseContainer/>
     </div>
     
     )
