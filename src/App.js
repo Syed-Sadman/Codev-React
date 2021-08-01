@@ -13,7 +13,8 @@
 // import Table from './comp/Table'
 
 //import IntervalCount from "./funcComp/IntervalCount";
-import DataFetching from "./funcComp/DataFetching";
+//import DataFetching from "./funcComp/DataFetching";
+import UseReduce from "./funcComp/UseReduce";
 //import IntervalHookCount from "./funcComp/IntervalHookCount";
 //import MouseContainer from "./funcComp/MouseContainer";
 
@@ -57,8 +58,8 @@ function App(){
     {/* <MouseContainer/> */}
     {/* <IntervalCount/> */}
     {/* <IntervalHookCount/> */}
-    <DataFetching/>
-
+    {/* <DataFetching/> */}
+    <UseReduce/>
     </div>
     
     )
