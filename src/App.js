@@ -1,4 +1,9 @@
+import React,{useReducer} from "react";
+import CompA from "./funcComp/CompA";
+import CompB from "./funcComp/CompB";
+import CompC from "./funcComp/CompC";
 
+export const CounterContext=React.createContext()
 // import Msg from './comp/Message'
 // import Count from './comp/Count'
 // import Greet from './comp/Gree'
@@ -15,7 +20,7 @@
 //import IntervalCount from "./funcComp/IntervalCount";
 //import DataFetching from "./funcComp/DataFetching";
 //import UseReduce from "./funcComp/UseReduce";
-import UseReduceThree from "./funcComp/UseReduceThree";
+//import UseReduceThree from "./funcComp/UseReduceThree";
 //import UseReduceTwo from "./funcComp/UseReduceTwo";
 //import IntervalHookCount from "./funcComp/IntervalHookCount";
 //import MouseContainer from "./funcComp/MouseContainer";
@@ -35,36 +40,61 @@ import UseReduceThree from "./funcComp/UseReduceThree";
 // import ComponentC from "./comp/ComponentC";
 // import {UserProvider} from "./comp/userContext"
 //import UserGreeting from './comp/UserGreeting'
+const initialState=0;
+const reducer=(state,action)=>{
+    switch(action){
+        case 'increment':
+            return state+1;
+        case 'decrement':
+            return state-1;
+        case 'reset':
+            return initialState; 
+        default:
+            return state;           
+    }
+}
+
+
 function App(){
+  const [count,dispatch]=useReducer(reducer,initialState)  
   return(
-    //   {/* <ClsClick/>
-    //   <br></br>
-    //   <FuncClick/> */}
-    // /* <ParentComponent/>
-    //   <UserGreeting/> */
-    // {/* <LifeCycleA/> */}
-    // {/* <Table/> */}
-    //   {/* <ClickCount/> */}
-    //   {/* <PureComp/> */}
-    //   {/* <ParentComp/> */}
-    //   {/* <HoverCount/> */}
-    //   {/* <CountTwo render={(count,increment)=><ClickCountTwo count={count} increment={increment}></ClickCountTwo>}/>
-    //   <CountTwo render={(count,increment)=><HoverCountTwo count={count} increment={increment}></HoverCountTwo> }/>
-    <div>
-      {/* <ClassCount/> */}
-      {/* <UseStateHook/> */}
-    {/* <HookCountFour/> */}
-      {/* <HooCountTwo/> */}
-      {/* <UseEffect/> */}
-    {/* <MouseHook/> */}
-    {/* <MouseContainer/> */}
-    {/* <IntervalCount/> */}
-    {/* <IntervalHookCount/> */}
-    {/* <DataFetching/> */}
-    {/* <UseReduce/> */}
-    {/* <UseReduceTwo/> */}
-    <UseReduceThree/>
-    </div>
+  //   //   {/* <ClsClick/>
+  //   //   <br></br>
+  //   //   <FuncClick/> */}
+  //   // /* <ParentComponent/>
+  //   //   <UserGreeting/> */
+  //   // {/* <LifeCycleA/> */}
+  //   // {/* <Table/> */}
+  //   //   {/* <ClickCount/> */}
+  //   //   {/* <PureComp/> */}
+  //   //   {/* <ParentComp/> */}
+  //   //   {/* <HoverCount/> */}
+  //   //   {/* <CountTwo render={(count,increment)=><ClickCountTwo count={count} increment={increment}></ClickCountTwo>}/>
+  //   //   <CountTwo render={(count,increment)=><HoverCountTwo count={count} increment={increment}></HoverCountTwo> }/>
+  
+  //     {/* <ClassCount/> */}
+  //     {/* <UseStateHook/> */}
+  //   {/* <HookCountFour/> */}
+  //     {/* <HooCountTwo/> */}
+  //     {/* <UseEffect/> */}
+  //   {/* <MouseHook/> */}
+  //   {/* <MouseContainer/> */}
+  //   {/* <IntervalCount/> */}
+  //   {/* <IntervalHookCount/> */}
+  //   {/* <DataFetching/> */}
+  //   {/* <UseReduce/> */}
+  //   {/* <UseReduceTwo/> */}
+  //   {/* <UseReduceThree/> */}
+    <CounterContext.Provider value={{counterCount:count,countDispatch:dispatch}}>
+        <div>
+            Count -{count}
+            <CompA/>
+            <CompB/>
+            <CompC/>
+        </div>
+    </CounterContext.Provider>
+    
+    
     
     )
       
