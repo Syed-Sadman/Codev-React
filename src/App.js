@@ -3,8 +3,12 @@
 // import CompB from "./funcComp/CompB";
 // import CompC from "./funcComp/CompC";
 
+import UseRefHook from "./funcComp/UseRefHook";
+
+
+
 //import DataFetchOne from "./funcComp/DataFetchOne";
-import DataFetchTwo from "./funcComp/DataFetchTwo";
+//import DataFetchTwo from "./funcComp/DataFetchTwo";
 
 // export const CounterContext=React.createContext()
 // import Msg from './comp/Message'
@@ -63,8 +67,10 @@ function App(){
   return(
 
     <div>
+    
+     <UseRefHook/>
       {/* <DataFetchOne/> */}
-      <DataFetchTwo/>
+      {/* <DataFetchTwo/> */}
     </div>
 
 
