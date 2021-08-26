@@ -3,7 +3,8 @@
 // import CompB from "./funcComp/CompB";
 // import CompC from "./funcComp/CompC";
 
-import DataFetchOne from "./funcComp/DataFetchOne";
+//import DataFetchOne from "./funcComp/DataFetchOne";
+import DataFetchTwo from "./funcComp/DataFetchTwo";
 
 // export const CounterContext=React.createContext()
 // import Msg from './comp/Message'
@@ -62,7 +63,8 @@ function App(){
   return(
 
     <div>
-      <DataFetchOne/>
+      {/* <DataFetchOne/> */}
+      <DataFetchTwo/>
     </div>
 
 
