@@ -3,7 +3,8 @@
 // import CompB from "./funcComp/CompB";
 // import CompC from "./funcComp/CompC";
 
-import UseRefHook from "./funcComp/UseRefHook";
+//import UseRefHook from "./funcComp/UseRefHook";
+import TimerHook from "./TimerHook";
 
 
 
@@ -67,8 +68,8 @@ function App(){
   return(
 
     <div>
-    
-     <UseRefHook/>
+    <TimerHook/>
+     {/* <UseRefHook/> */}
       {/* <DataFetchOne/> */}
       {/* <DataFetchTwo/> */}
     </div>
